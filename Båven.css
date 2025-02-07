@@ -1,0 +1,139 @@
+/* This sheet is the style of Torbjörns website for assignment 1*/
+/*Headers*/
+* {
+    box-sizing: border-box;
+  }
+html, body {
+    overflow-x: hidden;
+  }
+h1{
+    text-align: center;
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size:40px;
+    color: #1c281f;
+    margin: 0px !important;
+    border: 20px solid #6ab77b;
+    background: #6ab77b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    font-family: "Special Elite", Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+/*Navigation bar*/
+.top_navbar ul{
+    list-style-type: none;
+    background-color: #262b27;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden;
+}
+.top_navbar a{
+    color: #1dc642;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Creepster", Arial, Helvetica, sans-serif;
+}
+.top_navbar a:hover{
+    background-color: #314234;
+}
+.top_navbar li{
+    float: left;
+}
+/*Main part of the frontpage*/
+body{
+    margin: 0px;
+    background: linear-gradient(#a4ddda, #64db7e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+article{
+    margin:40px;
+    flex: 1;
+}
+.side{
+    background: linear-gradient(to right,#a4ddc6, #1dc642);
+    width: 100%;
+}
+/*Sidebar*/
+.aside{
+    width: 20%;
+    padding: 0rem;
+    box-shadow: inset 20px 0 50px -20px #a4ddda;
+    background-color: #8cd89d;
+    font-style: italic;
+    color: #324235;
+    max-height: 250px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+#sideheader{
+font-family: "Macondo", 'Times New Roman', Times, serif;
+}
+/*the image, adio and the video*/
+.media-row{
+    background-color: #6ab77b;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin: 50px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.media {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+.audio {
+    width: 100%;
+    max-width: 300px;
+}
+/*Link to external site*/
+.textlink{
+    text-decoration: dotted underline;
+    cursor:alias;
+    font-weight: bold;
+}
+.textlink:hover{
+    color: #0f523d;
+    transform: scale(1.2);
+}
+.textlink:visited {
+    color:#1d383f
+}
+/*Table*/
+.table1{
+    color: "Black";
+    background-color: black !important;
+}
+.table1 th{
+    color: #000000;
+    background-color:#809184;
+}
+.table1 td{
+    color: #1c281f;
+    background-color:#c6e5ce;
+}
+/*footer*/
+.footer{
+    order: 3;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #3c5140;
+    color: #1dc642;
+}
+.social{
+    font-size:x-large;
+    color: black;
+}
