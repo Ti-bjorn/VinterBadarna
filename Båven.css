@@ -7,13 +7,13 @@ html, body {
     overflow-x: hidden;
   }
 h1{
-    text-align: center;
+    /*text-align: center;*/
     font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
     font-size:40px;
     color: #1c281f;
     margin: 0px !important;
-    border: 20px solid #6ab77b;
-    background: #6ab77b;
+    /*border: 20px solid #982a11;*/
+    background: #982a11;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -49,7 +49,8 @@ h3{
 /*Main part of the frontpage*/
 body{
     margin: 0px;
-    background: linear-gradient(#a4ddda, #64db7e);
+    background: rgb(36,8,0);
+    background: linear-gradient(0deg,rgba(36,8,0,1) 0%, rgba(136,41,13,0.49466950959488276) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -136,4 +137,8 @@ font-family: "Macondo", 'Times New Roman', Times, serif;
 .social{
     font-size:x-large;
     color: black;
+}
+.media {
+    height: 150px;  /* Adjust this value */
+    width: auto;   /* Keeps the aspect ratio */
 }
