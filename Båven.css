@@ -33,7 +33,19 @@ h1 span {
         height: 120px; /* Reduce image size for smaller screens */
     }
 }
-
+.active{
+    background: #323934;
+}
+.textruta1{
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 30px;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 20px;
+}
 h1.priest{
     /*text-align: center;*/
     font-family: "Caesar Dressing", serif;
@@ -54,6 +66,7 @@ h2{
     font-family: "Special Elite", Arial, Helvetica, sans-serif;
 }
 h3{
+    font-family: "Special Elite", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
