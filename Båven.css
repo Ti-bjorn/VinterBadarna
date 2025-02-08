@@ -27,7 +27,7 @@ h1 span {
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 40px !important;/* Reduce font size for smaller screens */
+        font-size: 30px !important;/* Reduce font size for smaller screens */
     }
     h1 img.media {
         height: 120px; /* Reduce image size for smaller screens */
