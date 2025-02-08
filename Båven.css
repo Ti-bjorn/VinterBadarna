@@ -8,12 +8,27 @@ html, body {
   }
 h1{
     /*text-align: center;*/
-    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
-    font-size:40px;
-    color: #1c281f;
+    font-family: "Quintessential", serif;
+    /*"Pirata One", serif;*/
+    font-weight: bold !important;
+    font-size:55px !important;
+    color: rgb(0,0,0)!important;
     margin: 0px !important;
     /*border: 20px solid #982a11;*/
     background: #982a11;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1.priest{
+    /*text-align: center;*/
+    font-family: "Caesar Dressing", serif;
+    /*"Pirata One", serif;*/
+    font-weight: bold !important;
+    font-size:55px !important;
+    color: rgb(0,0,0)!important;
+    margin: 0px !important;
+    /*border: 20px solid #982a11;*/
+    background: #22472b;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -33,15 +48,15 @@ h3{
     overflow: hidden;
 }
 .top_navbar a{
-    color: #1dc642;
+    color: #f0c09e;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-    font-family: "Creepster", Arial, Helvetica, sans-serif;
+    font-family: "Nova Cut", Arial, Helvetica, sans-serif;
 }
 .top_navbar a:hover{
-    background-color: #314234;
+    background-color: #423531;
 }
 .top_navbar li{
     float: left;
@@ -55,6 +70,17 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
 }
+/* Vb page bakgrund */
+body.vb {
+    background-image: url('logo.png'); /* The image you want to repeat */
+    background-repeat: repeat; /* Repeats the image both horizontally and vertically */
+    background-size: 100px; /* Size of the image (width x height) */
+    background-position: 0 0, 50px 50px; /* Staggered placement for brick effect */
+    margin: 0;
+    padding: 0;
+}
+
+
 
 article{
     margin:40px;
@@ -139,6 +165,6 @@ font-family: "Macondo", 'Times New Roman', Times, serif;
     color: black;
 }
 .media {
-    height: 150px;  /* Adjust this value */
+    height: 130px;  /* Adjust this value */
     width: auto;   /* Keeps the aspect ratio */
 }
