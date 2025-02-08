@@ -8,17 +8,32 @@ html, body {
   }
 h1{
     /*text-align: center;*/
+    display: flex;
+    align-items: flex-end;
     font-family: "Quintessential", serif;
     /*"Pirata One", serif;*/
     font-weight: bold !important;
     font-size:55px !important;
     color: rgb(0,0,0)!important;
     margin: 0px !important;
-    /*border: 20px solid #982a11;*/
+    border: 2px solid #982a11;
     background: #982a11;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
+h1 span {
+    align-self: flex-end; /* Align the text to the bottom as well */
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px !important;/* Reduce font size for smaller screens */
+    }
+    h1 img.media {
+        height: 120px; /* Reduce image size for smaller screens */
+    }
+}
+
 h1.priest{
     /*text-align: center;*/
     font-family: "Caesar Dressing", serif;
@@ -27,10 +42,13 @@ h1.priest{
     font-size:55px !important;
     color: rgb(0,0,0)!important;
     margin: 0px !important;
-    /*border: 20px solid #982a11;*/
+    border: 2px solid #22472b;
     background: #22472b;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+h1.priest span {
+    align-self: flex-end; /* Align the text to the bottom as well */
 }
 h2{
     font-family: "Special Elite", Arial, Helvetica, sans-serif;
@@ -79,7 +97,14 @@ body.vb {
     margin: 0;
     padding: 0;
 }
-
+body.priest {
+    margin: 0px;
+    background: rgb(36,8,0);
+    background: linear-gradient(0deg,rgb(0, 36, 6) 0%, rgba(13, 136, 56, 0.495) 0%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
 
 
 article{
