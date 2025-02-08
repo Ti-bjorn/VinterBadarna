@@ -13,7 +13,7 @@ h1{
     font-family: "Quintessential", serif;
     /*"Pirata One", serif;*/
     font-weight: bold !important;
-    font-size:55px !important;
+    font-size:70px !important;
     color: rgb(0,0,0)!important;
     margin: 0px !important;
     border: 2px solid #982a11;
@@ -42,7 +42,7 @@ h1 span {
     background-color: #ffffff;
     margin: 30px;
     padding: 30px;
-    width: 89%;
+    min-width: 200px;
     max-width: 600px;
     border-radius: 20px;
 }
