@@ -33,14 +33,37 @@
         <img class="media" src="logoS.png" height="10">
         BÅVEN LOVERS
     </h1>
-    <!--The top navigation bar-->
+    <!--top navbar-->
     <nav class="top_navbar">
         <ul>
-            <li><a class="active" href="index.html">Om Båven</a></li>
-            <li><a href="vb.html">VinterBadarna</a></li>
-            <li><a href="prästön.html">Prästön</a></li>
+            <li><a class="active" href="index.html">Båven</a></li>
+            <li><a href="vb.html">Föreningen</a></li>
+            <li><a href="members.html">Medlemmar</a></li>
+            <li class="hidden-mobile"><a href="kalendarium.html">Kalendarium 2025</a></li>
+            <li class="hidden-mobile"><a href="protokoll.html">Mötesprotokoll</a></li>
+            <li class="hidden-mobile"><a href="prästön.html">Prästön</a></li>
+            <li>
+                <div class="dropdown">
+                    <a id="toggle" href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
+                </div>
+            </li>
         </ul>
     </nav>
+    <!--dropdown menyn-->
+    <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
+        <div class="p-2">
+          <p> </p>
+        </div>
+        <div class="p-2 ms-auto">
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="kalendarium.html">Kalendarium 2025</a></li>
+              <li><a href="protokoll.html">Protokoll</a></li>
+              <li><a href="prästön.html">Prästön</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     <div class="textruta1">
         <h2>Båven</h2>
         <p>Båven är en insjö belägen i Södermanland och sträcker sig över Flens, Gnesta och Nyköpings kommuner. Sjön har en yta på cirka 64 km² 
