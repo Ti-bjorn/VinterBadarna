@@ -149,9 +149,15 @@ body.priest {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-.dropdown{
+
+.dropdown {
     display: none;
 }
+
+#toggle:hover {
+    background-color: #262b27 !important;
+}
+
 /* Hide the last three items on small screens */
 @media (max-width: 600px) {
     h1 {
@@ -168,8 +174,23 @@ body.priest {
         display: none;
     }
 
-    .dropdown{
+    .dropdown {
         display: block;
+    }
+
+    .dropdown-content ul {
+        background-color: #262b27;
+        border-radius: 5px;
+        list-style: none;
+
+    }
+
+    .dropdown-content a {
+        color: #f0c09e;
+        text-decoration: none;
+        padding: 3px;
+        display: block;
+        font-family: "Nova Cut", Arial, Helvetica, sans-serif;
     }
 }
 
