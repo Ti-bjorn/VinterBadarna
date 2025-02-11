@@ -2,19 +2,22 @@
 /*Headers*/
 * {
     box-sizing: border-box;
-  }
-html, body {
+}
+
+html,
+body {
     overflow-x: hidden;
-  }
-h1{
+}
+
+h1 {
     /*text-align: center;*/
     display: flex;
     align-items: flex-end;
     font-family: "Quintessential", serif;
     /*"Pirata One", serif;*/
     font-weight: bold !important;
-    font-size:70px !important;
-    color: rgb(0,0,0)!important;
+    font-size: 70px !important;
+    color: rgb(0, 0, 0) !important;
     margin: 0px !important;
     border: 2px solid #982a11;
     background: #982a11;
@@ -22,21 +25,17 @@ h1{
     background-attachment: fixed;
 
 }
+
 h1 span {
-    align-self: flex-end; /* Align the text to the bottom as well */
+    align-self: flex-end;
+    /* Align the text to the bottom as well */
 }
-@media (max-width: 600px) {
-    h1 {
-        font-size: 29px !important;/* Reduce font size for smaller screens */
-    }
-    h1 img.media {
-        height: 120px; /* Reduce image size for smaller screens */
-    }
-}
-.active{
+
+.active {
     background: #323934;
 }
-.textruta1{
+
+.textruta1 {
     font-family: "Saira Stencil One";
     margin-bottom: 50px;
     background-color: #ffffff;
@@ -46,20 +45,22 @@ h1 span {
     max-width: 600px;
     border-radius: 20px;
 }
-h1.priest{
+
+h1.priest {
     /*text-align: center;*/
     font-family: "Caesar Dressing", serif;
     /*"Pirata One", serif;*/
     font-weight: bold !important;
-    font-size:55px !important;
-    color: rgb(0,0,0)!important;
+    font-size: 55px !important;
+    color: rgb(0, 0, 0) !important;
     margin: 0px !important;
     border: 2px solid #22472b;
     background: #22472b;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.länkblock1{
+
+.länkblock1 {
     font-family: "Saira Stencil One";
     margin-bottom: 50px;
     background-color: #232121;
@@ -70,33 +71,48 @@ h1.priest{
     border-radius: 20px;
 }
 
-.länkblock1 a{
+.länkblock1 a {
     color: #f0c09e;
     text-decoration: none;
     padding: 15px;
     display: block;
     font-family: "Nova Cut", Arial, Helvetica, sans-serif;
 }
+
 h1.priest span {
-    align-self: flex-end; /* Align the text to the bottom as well */
+    align-self: flex-end;
+    /* Align the text to the bottom as well */
 }
-h2{
+
+h2 {
     font-family: "Special Elite", Arial, Helvetica, sans-serif;
 }
-h3{
+
+h3 {
     font-family: "Special Elite", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
+
 /*Navigation bar*/
-.top_navbar ul{
+.top_navbar {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #262b27;
+    width: 100%; /* Ensures navbar takes full width */
+    justify-content: space-between; /* Ensures content is spaced evenly */
+}
+
+.top_navbar ul {
     list-style-type: none;
     background-color: #262b27;
     padding: 0px !important;
     margin: 0px !important;
     overflow: hidden;
 }
-.top_navbar a{
+
+.top_navbar a {
     color: #f0c09e;
     text-decoration: none;
     padding: 15px;
@@ -104,75 +120,84 @@ h3{
     text-align: center;
     font-family: "Nova Cut", Arial, Helvetica, sans-serif;
 }
-.top_navbar a:hover{
+
+.top_navbar a:hover {
     background-color: #423531;
 }
-.top_navbar li{
+
+.top_navbar li {
     float: left;
 }
+
 /*Main part of the frontpage*/
-body{
+body {
     margin: 0px;
-    background: rgb(36,8,0);
-    background: linear-gradient(0deg,rgba(36,8,0,1) 0%, rgba(136,41,13,0.49466950959488276) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(36, 8, 0);
+    background: linear-gradient(0deg, rgba(36, 8, 0, 1) 0%, rgba(136, 41, 13, 0.49466950959488276) 0%, rgba(255, 255, 255, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
 }
-/* Vb page bakgrund */
-body.vb {
-    background-image: url('logo.png'); /* The image you want to repeat */
-    background-repeat: repeat; /* Repeats the image both horizontally and vertically */
-    background-size: 100px; /* Size of the image (width x height) */
-    background-position: 0 0, 50px 50px; /* Staggered placement for brick effect */
-    margin: 0;
-    padding: 0;
-}
+
 body.priest {
     margin: 0px;
-    background: rgb(36,8,0);
-    background: linear-gradient(0deg,rgb(0, 36, 6) 0%, rgba(13, 136, 56, 0.495) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(36, 8, 0);
+    background: linear-gradient(0deg, rgb(0, 36, 6) 0%, rgba(13, 136, 56, 0.495) 0%, rgba(255, 255, 255, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
 }
 
-        /* Hide the last three items on small screens */
-        @media (max-width: 600px) {
-            .hidden-mobile {
-                display: none;
-            }
-            .dropdown {
-                display: block;
-            }
-        }
+/* Hide the last three items on small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 29px !important;
+        /* Reduce font size for smaller screens */
+    }
 
-        /* Dropdown menu styles */
-        .dropdown {
-            position: relative;
-            display: none;
-        }
+    h1 img.media {
+        height: 120px;
+        /* Reduce image size for smaller screens */
+    }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 150px;
-            top: 40px;
-            right: 0;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
+    .hidden-mobile {
+        display: none;
+    }
 
-        .dropdown-content a {
-            display: block;
-            padding: 10px;
-            text-align: left;
-            color: white;
-        }
+    .dropdown {
+        display: inline;
+        position: relative;
+    }
 
-        .dropdown-content a:hover {
-            background-color: #444;
-        }
+    /* Dropdown menu styling */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 150px;
+        right: 0;
+        top: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    /* Style dropdown links */
+    .dropdown-content a {
+        display: inline;
+        padding: 10px;
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #444;
+    }
+}
+
+/* Show dropdown when clicked */
+.show {
+    display: block !important;
+}
+
 
 
 
@@ -182,16 +207,18 @@ body.priest {
 
 
 /* old */
-article{
-    margin:40px;
+article {
+    margin: 40px;
     flex: 1;
 }
-.side{
-    background: linear-gradient(to right,#a4ddc6, #1dc642);
+
+.side {
+    background: linear-gradient(to right, #a4ddc6, #1dc642);
     width: 100%;
 }
+
 /*Sidebar*/
-.aside{
+.aside {
     width: 20%;
     padding: 0rem;
     box-shadow: inset 20px 0 50px -20px #a4ddda;
@@ -199,13 +226,16 @@ article{
     font-style: italic;
     color: #324235;
     max-height: 250px;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    overflow-y: auto;
+    /* Allow scrolling if content overflows */
 }
-#sideheader{
-font-family: "Macondo", 'Times New Roman', Times, serif;
+
+#sideheader {
+    font-family: "Macondo", 'Times New Roman', Times, serif;
 }
+
 /*the image, adio and the video*/
-.media-row{
+.media-row {
     background-color: #6ab77b;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -215,44 +245,53 @@ font-family: "Macondo", 'Times New Roman', Times, serif;
     width: 100%;
     overflow: hidden;
 }
+
 .media {
     padding: 10px;
     width: 100%;
     height: auto;
     box-sizing: border-box;
-  }
+}
+
 .audio {
     width: 100%;
     max-width: 300px;
 }
+
 /*Link to external site*/
-.textlink{
+.textlink {
     text-decoration: dotted underline;
-    cursor:alias;
+    cursor: alias;
     font-weight: bold;
 }
-.textlink:hover{
+
+.textlink:hover {
     color: #0f523d;
     transform: scale(1.2);
 }
+
 .textlink:visited {
-    color:#1d383f
+    color: #1d383f
 }
+
 /*Table*/
-.table1{
+.table1 {
     color: "Black";
     background-color: black !important;
 }
-.table1 th{
+
+.table1 th {
     color: #000000;
-    background-color:#809184;
+    background-color: #809184;
 }
-.table1 td{
+
+.table1 td {
     color: #1c281f;
-    background-color:#c6e5ce;
+    background-color: #c6e5ce;
 }
+
 /*footer*/
-.footer{
+.footer {
     order: 3;
     display: flex;
     justify-content: center;
@@ -260,11 +299,15 @@ font-family: "Macondo", 'Times New Roman', Times, serif;
     background-color: #3c5140;
     color: #1dc642;
 }
-.social{
-    font-size:x-large;
+
+.social {
+    font-size: x-large;
     color: black;
 }
+
 .media {
-    height: 130px;  /* Adjust this value */
-    width: auto;   /* Keeps the aspect ratio */
+    height: 130px;
+    /* Adjust this value */
+    width: auto;
+    /* Keeps the aspect ratio */
 }

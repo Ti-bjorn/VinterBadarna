@@ -28,7 +28,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body ><!--class="vb"-->
+<body><!--class="vb"-->
     <h1>
         <img class="media" src="logoS.png" height="10">
         BÅVEN LOVERS
@@ -37,21 +37,22 @@
     <nav class="top_navbar">
         <ul>
             <li><a href="index.html">Båven</a></li>
-            <li><a class="active" href="vb.html">Om Föreningen</a></li>
+            <li><a class="active" href="vb.html">Föreningen</a></li>
             <li><a href="index.html">Medlemmar</a></li>
-            <li><a href="vb.html">Kalendarium 2025</a></li>
-            <li><a href="prästön.html">Protokoll</a></li>
-            <li><a href="prästön.html">Prästön</a></li>
+            <li class="hidden-mobile"><a href="vb.html">Kalendarium 2025</a></li>
+            <li class="hidden-mobile"><a href="prästön.html">Protokoll</a></li>
+            <li class="hidden-mobile"><a href="prästön.html">Prästön</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown2()">Ξ ▼</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="vb.html">Kalendarium 2025</a>
+                        <a href="prästön.html">Protokoll</a>
+                        <a href="prästön.html">Prästön</a>
+                    </div>
+                </div>
+            </li>
         </ul>
-         <!-- Dropdown menu for mobile -->
-         <div class="dropdown">
-            <a href="#" onclick="toggleDropdown()">More ▼</a>
-            <div class="dropdown-content" id="dropdownMenu">
-                <a href="vb.html">Kalendarium 2025</a>
-                <a href="prästön.html">Protokoll</a>
-                <a href="prästön.html">Prästön</a>
-            </div>
-        </div>
     </nav>
     <script src="Båven.js"></script>
 </body>
