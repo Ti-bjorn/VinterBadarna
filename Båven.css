@@ -27,7 +27,7 @@ h1 span {
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 28px !important;/* Reduce font size for smaller screens */
+        font-size: 29px !important;/* Reduce font size for smaller screens */
     }
     h1 img.media {
         height: 120px; /* Reduce image size for smaller screens */
@@ -58,6 +58,24 @@ h1.priest{
     background: #22472b;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.länkblock1{
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    background-color: #232121;
+    margin: 30px;
+    padding: 0px;
+    min-width: 150px;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.länkblock1 a{
+    color: #f0c09e;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-family: "Nova Cut", Arial, Helvetica, sans-serif;
 }
 h1.priest span {
     align-self: flex-end; /* Align the text to the bottom as well */
@@ -118,7 +136,6 @@ body.priest {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-
 
 article{
     margin:40px;
