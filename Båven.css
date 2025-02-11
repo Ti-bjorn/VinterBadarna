@@ -137,6 +137,51 @@ body.priest {
     overflow-x: hidden;
 }
 
+        /* Hide the last three items on small screens */
+        @media (max-width: 600px) {
+            .hidden-mobile {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+            display: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 150px;
+            top: 40px;
+            right: 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+        }
+
+
+
+
+
+
+
+
+/* old */
 article{
     margin:40px;
     flex: 1;
