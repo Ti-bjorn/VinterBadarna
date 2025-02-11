@@ -100,8 +100,10 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     background-color: #262b27;
-    width: 100%; /* Ensures navbar takes full width */
-    justify-content: space-between; /* Ensures content is spaced evenly */
+    width: 100%;
+    /* Ensures navbar takes full width */
+    justify-content: space-between;
+    /* Ensures content is spaced evenly */
 }
 
 .top_navbar ul {
@@ -147,7 +149,9 @@ body.priest {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-
+.dropdown{
+    display: none;
+}
 /* Hide the last three items on small screens */
 @media (max-width: 600px) {
     h1 {
@@ -164,38 +168,9 @@ body.priest {
         display: none;
     }
 
-    .dropdown {
-        display: inline;
-        position: relative;
+    .dropdown{
+        display: block;
     }
-
-    /* Dropdown menu styling */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #333;
-        min-width: 150px;
-        right: 0;
-        top: 100%;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-    }
-
-    /* Style dropdown links */
-    .dropdown-content a {
-        display: inline;
-        padding: 10px;
-        color: white;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #444;
-    }
-}
-
-/* Show dropdown when clicked */
-.show {
-    display: block !important;
 }
 
 

@@ -44,17 +44,29 @@
             <li class="hidden-mobile"><a href="prästön.html">Prästön</a></li>
             <li>
                 <div class="dropdown">
-                    <a href="#" onclick="toggleDropdown2()">Ξ ▼</a>
-                    <div class="dropdown-content" id="dropdownMenu">
-                        <a href="vb.html">Kalendarium 2025</a>
-                        <a href="prästön.html">Protokoll</a>
-                        <a href="prästön.html">Prästön</a>
-                    </div>
+                    <a href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
                 </div>
             </li>
         </ul>
     </nav>
-    <script src="Båven.js"></script>
+    <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
+        <div class="p-2">
+          <p> </p>
+        </div>
+        <div class="p-2 ms-auto">
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="vb.html">Kalendarium 2025</a></li>
+              <li><a href="prästön.html">Protokoll</a></li>
+              <li><a href="prästön.html">Prästön</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="textruta1">
+        text
+      </div>
+        <script src="Båven.js"></script>
 </body>
 
 </html>
