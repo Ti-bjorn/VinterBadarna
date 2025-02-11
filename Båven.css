@@ -161,7 +161,7 @@ body.priest {
 /* Hide the last three items on small screens */
 @media (max-width: 600px) {
     h1 {
-        font-size: 29px !important;
+        font-size: 34px !important;
         /* Reduce font size for smaller screens */
     }
 
