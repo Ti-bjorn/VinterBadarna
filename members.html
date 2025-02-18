@@ -2,72 +2,132 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="Båven.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Båven.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel:wght@400..900&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap" rel="stylesheet">
 </head>
 
 <body><!--class="vb"-->
-    <h1>
-        <img class="media" src="logoS.png" height="10">
-        BÅVEN LOVERS
-    </h1>
-    <!--top navbar-->
-    <nav class="top_navbar">
+  <h1>
+    <img class="media" src="logoS.png" height="10">
+    BÅVEN LOVERS
+  </h1>
+  <!--top navbar-->
+  <nav class="top_navbar">
+    <ul>
+      <li><a href="index.html">Båven</a></li>
+      <li><a href="vb.html">Föreningen</a></li>
+      <li><a class="active" href="members.html">Medlemmar</a></li>
+      <li class="hidden-mobile"><a href="kalendarium.html">Kalendarium 2025</a></li>
+      <li class="hidden-mobile"><a href="protokoll.html">Mötesprotokoll</a></li>
+      <li class="hidden-mobile"><a href="prästön.html">Prästön</a></li>
+      <li>
+        <div class="dropdown">
+          <a id="toggle" href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!--dropdown menyn-->
+  <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
+    <div class="p-2">
+      <p> </p>
+    </div>
+    <div class="p-2 ms-auto">
+      <div class="dropdown-content">
         <ul>
-            <li><a href="index.html">Båven</a></li>
-            <li><a href="vb.html">Föreningen</a></li>
-            <li><a class="active" href="members.html">Medlemmar</a></li>
-            <li class="hidden-mobile"><a href="kalendarium.html">Kalendarium 2025</a></li>
-            <li class="hidden-mobile"><a href="protokoll.html">Mötesprotokoll</a></li>
-            <li class="hidden-mobile"><a href="prästön.html">Prästön</a></li>
-            <li>
-                <div class="dropdown">
-                    <a id="toggle" href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
-                </div>
-            </li>
+          <li><a href="kalendarium.html">Kalendarium 2025</a></li>
+          <li><a href="protokoll.html">Mötesprotokoll</a></li>
+          <li><a href="prästön.html">Prästön</a></li>
         </ul>
-    </nav>
-    <!--dropdown menyn-->
-    <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
-        <div class="p-2">
-          <p> </p>
-        </div>
-        <div class="p-2 ms-auto">
-          <div class="dropdown-content">
-            <ul>
-              <li><a href="kalendarium.html">Kalendarium 2025</a></li>
-              <li><a href="protokoll.html">Protokoll</a></li>
-              <li><a href="prästön.html">Prästön</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <div class="textruta1">
-        Medlemmar text
-      </div>
-        <script src="Båven.js"></script>
+    </div>
+  </div>
+  <div class="memberruta1">
+    <h2>Våra medlemmar</h2>
+  </div>
+  <div class="container">
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Willy</h3>
+      <p>Ekonomiansvarig</p>
+      <span>Sekreterare</span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Danne</h3>
+      <p>Pumpgropsansvarig</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Davis</h3>
+      <p>Finansiär</p>
+      <span>Närmast nästa lön</span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>TB</h3>
+      <p>IT-ansvarig</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Ralle</h3>
+      <p>Quizkontakt</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Stertan</h3>
+      <p>Dildoansvarig</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Julle</h3>
+      <p>Sladdansvarig</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Karlsson</h3>
+      <p>Gruyèreansvarig</p>
+      <span></span>
+    </div>
+    <div class="card">
+      <img class="media" src="logoS.png">
+      <h3>Persson</h3>
+      <p>Fylleansvarig</p>
+      <span>Isvakare</span>
+    </div>
+  </div>
+  </div>
+  <script src="Båven.js"></script>
 </body>
 
 </html>

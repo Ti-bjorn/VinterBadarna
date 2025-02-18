@@ -159,7 +159,7 @@ body.priest {
 }
 
 /* Hide the last three items on small screens */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 34px !important;
         /* Reduce font size for smaller screens */
@@ -192,9 +192,86 @@ body.priest {
         display: block;
         font-family: "Nova Cut", Arial, Helvetica, sans-serif;
     }
+    .container {
+        justify-content: center !important;
+    }
+}
+table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: #eceaea;
+}
+th {
+    background-color: #cebdbd;
+}
+/*Link to document */
+.textlink {
+    text-decoration:none;
+    cursor:alias;
+    font-weight: bold;
+    color: #b30707;
 }
 
+.textlink:hover {
+    color: #fb0909;
+    transform: scale(1.2);
+}
 
+.textlink:visited {
+    color: #9f4444
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+.memberruta1 {
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    margin: 30px;
+    padding: 30px;
+    min-width: 150px;
+    max-width: 800px;
+    border-radius: 20px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-family: "Cinzel", Arial, Helvetica, sans-serif;
+}
+.card p {
+    margin: 5px 0;
+    color: #777;
+}
+.card span {
+    margin: 5px 0;
+    color: #777;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
 
 
 
@@ -252,38 +329,6 @@ article {
 .audio {
     width: 100%;
     max-width: 300px;
-}
-
-/*Link to external site*/
-.textlink {
-    text-decoration: dotted underline;
-    cursor: alias;
-    font-weight: bold;
-}
-
-.textlink:hover {
-    color: #0f523d;
-    transform: scale(1.2);
-}
-
-.textlink:visited {
-    color: #1d383f
-}
-
-/*Table*/
-.table1 {
-    color: "Black";
-    background-color: black !important;
-}
-
-.table1 th {
-    color: #000000;
-    background-color: #809184;
-}
-
-.table1 td {
-    color: #1c281f;
-    background-color: #c6e5ce;
 }
 
 /*footer*/

@@ -2,72 +2,89 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="Båven.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Båven.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=MedievalSharp&family=Nova+Cut&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Yatra+One&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body class="priest">
-    <h1 class="priest">
-        <img class="media" src="prästön.png" height="10">
-        PrästÖn
-    </h1>
-    <!--top navbar-->
-    <nav class="top_navbar">
+  <h1 class="priest">
+    <img class="media" src="prästön.png" height="10">
+    PrästÖn
+  </h1>
+  <!--top navbar-->
+  <nav class="top_navbar">
+    <ul>
+      <li><a href="index.html">Båven</a></li>
+      <li><a href="vb.html">Föreningen</a></li>
+      <li><a href="members.html">Medlemmar</a></li>
+      <li class="hidden-mobile"><a href="kalendarium.html">Kalendarium 2025</a></li>
+      <li class="hidden-mobile"><a href="protokoll.html">Mötesprotokoll</a></li>
+      <li class="hidden-mobile"><a class="active" href="prästön.html">Prästön</a></li>
+      <li>
+        <div class="dropdown">
+          <a id="toggle" href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!--dropdown menyn-->
+  <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
+    <div class="p-2">
+      <p> </p>
+    </div>
+    <div class="p-2 ms-auto">
+      <div class="dropdown-content">
         <ul>
-            <li><a href="index.html">Båven</a></li>
-            <li><a href="vb.html">Föreningen</a></li>
-            <li><a href="members.html">Medlemmar</a></li>
-            <li class="hidden-mobile"><a href="kalendarium.html">Kalendarium 2025</a></li>
-            <li class="hidden-mobile"><a href="protokoll.html">Mötesprotokoll</a></li>
-            <li class="hidden-mobile"><a class="active" href="prästön.html">Prästön</a></li>
-            <li>
-                <div class="dropdown">
-                    <a id="toggle" href="#" onclick="toggleDropdown(event)">Ξ ▼</a>
-                </div>
-            </li>
+          <li><a href="kalendarium.html">Kalendarium 2025</a></li>
+          <li><a href="protokoll.html">Mötesprotokoll</a></li>
+          <li><a href="prästön.html">Prästön</a></li>
         </ul>
-    </nav>
-    <!--dropdown menyn-->
-    <div class="dropdown-container d-flex align-items-center d-none" id="dropdownMenu">
-        <div class="p-2">
-          <p> </p>
-        </div>
-        <div class="p-2 ms-auto">
-          <div class="dropdown-content">
-            <ul>
-              <li><a href="kalendarium.html">Kalendarium 2025</a></li>
-              <li><a href="protokoll.html">Protokoll</a></li>
-              <li><a href="prästön.html">Prästön</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <div class="textruta1">
-        prästön text
-      </div>
-        <script src="Båven.js"></script>
+    </div>
+  </div>
+  <div class="textruta1">
+    <h2>Ön</h2>
+    Prästön, belägen i Båven, utgör en central punkt för fritidsaktiviteter med tydlig inriktning på konsumtion av öl
+    och rom-cola. Ön är särskilt väl lämpad för camping, grillning och allmänt avkopplande verksamhet, där löst folk
+    med hög konsekvens intar större mängder dryck i samband med matlagning och naturnära samkväm.
+    <figure>
+      <img class="media" src="Präst2.png" height="800" alt="This is a image" title="The wilderness">
+      <img class="media" src="präst1.png" height="800" alt="This is a image" title="The wilderness">
+    </figure>
+    Den ursprungliga vegetationen på ön har genom åren minskat avsevärt, huvudsakligen till följd av en omfattande och
+    oreglerad vedanskaffning för grilländamål. Tidigare förekommande buskage och mindre träd har successivt övergått
+    från att vara en del av ekosystemet till att utgöra bränsle för burgartillagning. Detta har lett till en viss
+    ekologisk omvandling, där vedförrådet på ön numera består av det som nyligen har blåst omkull eller ännu inte
+    upptäckts av resursförvaltande besökare.
+
+    Trots den gradvisa skogsförlusten kvarstår Prästön som en högt uppskattad destination, där bastubadare, båtfolk och
+    allmänt törstiga individer finner en stabil bas för vätskeintag och matlagning. Öl- och rom-colakonsumtionen sker
+    med sådan regelbundenhet att ön, rent statistiskt, sannolikt uppvisar en högre promillehalt än det omgivande
+    vattnet.
+  </div>
+  <script src="Båven.js"></script>
 </body>
 
 </html>
