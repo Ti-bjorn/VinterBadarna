@@ -272,9 +272,16 @@ th {
     justify-content: left;
     gap: 20px;
 }
-
-
-
+/*footer*/
+.footer {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #262b27ef;
+    color: #f0ca9e;
+}
 
 
 
@@ -330,17 +337,6 @@ article {
     width: 100%;
     max-width: 300px;
 }
-
-/*footer*/
-.footer {
-    order: 3;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #3c5140;
-    color: #1dc642;
-}
-
 .social {
     font-size: x-large;
     color: black;
