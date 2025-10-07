@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Creepster&family=Macondo&family=Permanent+Marker&family=Press+Start+2P&family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Nova+Cut&family=Yatra+One&display=swap');
+
+
+@import "tailwindcss";
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+h1 span {
+    align-self: flex-end;
+    /* Align the text to the bottom as well */
+}
+
+.active {
+    background: #323934;
+}
+
+.textruta1 {
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 30px;
+    min-width: 150px;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+h1.priest {
+    /*text-align: center;*/
+    font-family: "Caesar Dressing", serif;
+    /*"Pirata One", serif;*/
+    font-weight: bold !important;
+    font-size: 55px !important;
+    color: rgb(0, 0, 0) !important;
+    margin: 0px !important;
+    border: 2px solid #22472b;
+    background: #22472b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.länkblock1 {
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    background-color: #232121;
+    margin: 30px;
+    padding: 0px;
+    min-width: 150px;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.länkblock1 a {
+    color: #f0c09e;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-family: "Nova Cut", Arial, Helvetica, sans-serif;
+}
+
+h1.priest span {
+    align-self: flex-end;
+    /* Align the text to the bottom as well */
+}
+
+h2 {
+    font-family: "Special Elite", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Special Elite", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*Navigation bar*/
+.top_navbar {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #262b27;
+    width: 100%;
+    /* Ensures navbar takes full width */
+    justify-content: space-between;
+    /* Ensures content is spaced evenly */
+}
+/*
+.top_navbar ul {
+    list-style-type: none;
+    background-color: #262b27;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden;
+}
+
+.top_navbar a {
+    color: #f0c09e;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Nova Cut", Arial, Helvetica, sans-serif;
+}
+
+.top_navbar a:hover {
+    background-color: #423531;
+}
+
+.top_navbar li {
+    float: left;
+}*/
+
+/*Main part of the frontpage*/
+body {
+    margin: 0px;
+    background: rgb(36, 8, 0);
+    background: linear-gradient(0deg, rgba(36, 8, 0, 1) 0%, rgba(136, 41, 13, 0.49466950959488276) 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.priest {
+    margin: 0px;
+    background: rgb(36, 8, 0);
+    background: linear-gradient(0deg, rgb(0, 36, 6) 0%, rgba(13, 136, 56, 0.495) 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.dropdown {
+    display: none;
+}
+
+#toggle:hover {
+    background-color: #262b27 !important;
+}
+
+/* Hide the last three items on small screens */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 34px !important;
+        /* Reduce font size for smaller screens */
+    }
+
+    h1 img.media {
+        /*height: 120px;
+         Reduce image size for smaller screens */
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+   /* .dropdown-content ul {
+        background-color: #262b27;
+        border-radius: 5px;
+        list-style: none;
+
+    }*/
+
+    .dropdown-content a {
+        color: #f0c09e;
+        text-decoration: none;
+        padding: 3px;
+        display: block;
+        font-family: "Nova Cut", Arial, Helvetica, sans-serif;
+    }
+    .container {
+        justify-content: center !important;
+    }
+}
+table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: #eceaea;
+}
+th {
+    background-color: #cebdbd;
+}
+/*Link to document */
+.textlink {
+    text-decoration:none;
+    cursor:alias;
+    font-weight: bold;
+    color: #b30707;
+}
+
+.textlink:hover {
+    color: #fb0909;
+    transform: scale(1.2);
+}
+
+.textlink:visited {
+    color: #9f4444
+}/*
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+.memberruta1 {
+    font-family: "Saira Stencil One";
+    margin-bottom: 50px;
+    margin: 30px;
+    padding: 30px;
+    min-width: 150px;
+    max-width: 800px;
+    border-radius: 20px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-family: "Cinzel", Arial, Helvetica, sans-serif;
+}
+.card p {
+    margin: 5px 0;
+    color: #777;
+}
+.card span {
+    margin: 5px 0;
+    color: #777;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+/*footer*/
+.footer {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #262b27ef;
+    color: #f0ca9e;
+}
