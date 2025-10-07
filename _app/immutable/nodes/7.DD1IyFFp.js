@@ -1,5 +1,4 @@
-  <div class="textruta1">
-    Prästön, belägen i Båven, utgör en central punkt för fritidsaktiviteter med tydlig inriktning på konsumtion av öl
+import"../chunks/DsnmJJEf.js";import"../chunks/DIZmYAms.js";import{x as e,y as a}from"../chunks/CfUyi4ht.js";var r=e(`<div class="textruta1">Prästön, belägen i Båven, utgör en central punkt för fritidsaktiviteter med tydlig inriktning på konsumtion av öl
     och rom-cola. Ön är särskilt väl lämpad för camping, grillning och allmänt avkopplande verksamhet, där löst folk
     med hög konsekvens intar större mängder dryck i samband med matlagning och naturnära samkväm.
     Den ursprungliga vegetationen på ön har genom åren minskat avsevärt, huvudsakligen till följd av en omfattande och
@@ -11,5 +10,4 @@
     Trots den gradvisa skogsförlusten kvarstår Prästön som en högt uppskattad destination, där bastubadare, båtfolk och
     allmänt törstiga individer finner en stabil bas för vätskeintag och matlagning. Öl- och rom-colakonsumtionen sker
     med sådan regelbundenhet att ön, rent statistiskt, sannolikt uppvisar en högre promillehalt än det omgivande
-    vattnet.
-  </div>
+    vattnet.</div>`);function o(t){var n=r();a(t,n)}export{o as component};
